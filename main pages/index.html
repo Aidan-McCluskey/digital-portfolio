@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Home</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="naveer">
+            <ul>
+                <li class="logo"><a href="index.html"><img src="../img/name.png" alt="logo"></a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html">My Portfolio</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="pageLink" href="/work/">Work</a>
+                        <div class="dropdownItems">
+                            <a href="/work/case1">My First Website</a>
+                            <a href="/work/case2">Tourism Website</a>
+                            <a href="/work/case3">Interactive Story</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="carousel">
+            <div class="slide">
+                <img src="../img/chrono.png" alt="Chronoshift">
+            </div>
+            <div class="slide">
+                <img src="../img/tourism.PNG" alt="Voyager">
+            </div>
+            <div class="slide">
+                <img src="../img/interactive.png" alt="Interactive Story">
+                <div class="prev" onclick="slide.advance(-1)">&lt;</div>
+                <div class="next" onclick="slide.advance(1)">&gt;</div>
+            </div>
+            <div class="homeText">
+                <p>
+                    Hello, and welcome to my digital portfolio! <br><br> name is Aidan McCluskey, and I currently attend
+                    Buchanan High School, where I will graduate in 2022. I am also taking the Web Applications lab at
+                    the Center for Advanced Research and Technology (CART).
+                </p>
+            </div>
+    </main>
+    <footer>
+        <ul>
+            <li>Contact me at <br>aidanmccluskey19@gmail.com</li>
+        </ul>
+        <span>&copy;2022 Aidan McCluskey</span>
+    </footer>
+</body>
+
+</html>
