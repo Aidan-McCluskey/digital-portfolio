@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Contact</title>
+    <link rel="icon" type="image/x-icon" href="img/name.png">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="naveer">
+            <ul>
+                <li class="logo"><a href="index.html"><img src="img/name.png" alt="logo"></a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html">My Portfolio</a></li>
+                <li>
+                    <ul class="dropdown">
+                        <li><a class="pageLink" href="works.html">Work</a></li>
+                        <ul class="dropdownItems">
+                            <li><a href="/works/chronoshift.html">My First Website</a></li>
+                            <li><a href="/works/tourism.html">Tourism Website</a></li>
+                            <li><a href="/works/interactive.html">Interactive Story</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="wrapper">
+            <form class="formContent">
+                <div class="formGroup">
+                    <input type="text" placeholder="Full Name" id="name">
+                </div>
+                <div class="formGroup">
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="formGroup">
+                    <textarea placeholder="Content" id="message"></textarea>
+                </div>
+                <button type="submit" onclick="validate()">Send Email</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Contact me at <br>aidanmccluskey19@gmail.com</li>
+        </ul>
+        <span>&copy;2022 Aidan McCluskey</span>
+    </footer>
+</body>
+
+</html>
