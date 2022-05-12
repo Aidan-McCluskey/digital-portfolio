@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio | About Me</title>
     <link rel="icon" type="image/x-icon" href="img/name.png">
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,28 +15,32 @@
     <header>
         <nav class="naveer">
             <ul>
-                <li class="logo"><a href="index.html"><img src="img/name.png" alt="logo"></a></li>
+                <li class="logo"><a href="index.html"><img src="img/namesmol.png" alt="logo"></a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="portfolio.html">My Portfolio</a></li>
+                <li><a href="portfolio.html">Resume</a></li>
                 <li>
+                    <ul class="dropdown">
                         <li><a class="pageLink" href="works.html">Work</a></li>
                         <ul class="dropdownItems">
                             <li><a href="/works/chronoshift.html">My First Website</a></li>
                             <li><a href="/works/tourism.html">Tourism Website</a></li>
                             <li><a href="/works/interactive.html">Interactive Story</a></li>
                         </ul>
+                    </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <div class="slide">
-            <img src="img/IMG_3081.jpg" alt="Chronoshift">
+        <div class="carousel">
+            <div class="slideMid">
+                <img src="img/IMG_3081.jpg" alt="">
+            </div>
         </div>
         <div class="aboutText">
             <p>
-                Hello, and welcome to my digital portfolio! <br><br> name is Aidan McCluskey, and I currently attend
+                Hello, and welcome to my digital portfolio! <br><br>My name is Aidan McCluskey, and I currently attend
                 Buchanan High School, where I will graduate in 2022. I am also attending the Center for Advanced
                 Research and Technology (CART) to expand my knowledge on subjects that interest me and are not taught in
                 full at my home school. At CART, I am taking the Web Applications lab. At the moment, I have not held an
@@ -48,9 +52,6 @@
         </div>
     </main>
     <footer>
-        <ul>
-            <li>Contact me at <br>aidanmccluskey19@gmail.com</li>
-        </ul>
         <span>&copy;2022 Aidan McCluskey</span>
     </footer>
 </body>

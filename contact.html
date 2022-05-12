@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio | Contact</title>
     <link rel="icon" type="image/x-icon" href="img/name.png">
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,9 +15,9 @@
     <header>
         <nav class="naveer">
             <ul>
-                <li class="logo"><a href="index.html"><img src="img/name.png" alt="logo"></a></li>
+                <li class="logo"><a href="index.html"><img src="img/namesmol.png" alt="logo"></a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="portfolio.html">My Portfolio</a></li>
+                <li><a href="portfolio.html">Resume</a></li>
                 <li>
                     <ul class="dropdown">
                         <li><a class="pageLink" href="works.html">Work</a></li>
@@ -33,7 +33,7 @@
         </nav>
     </header>
     <main class="main">
-        <section class="wrapper">
+        <section class="naveer">
             <form class="formContent">
                 <div class="formGroup">
                     <input type="text" placeholder="Full Name" id="name">
@@ -42,16 +42,13 @@
                     <input type="text" placeholder="Email" id="email">
                 </div>
                 <div class="formGroup">
-                    <textarea placeholder="Content" id="message"></textarea>
+                    <textarea placeholder="Content" id="content"></textarea>
                 </div>
                 <button type="submit" onclick="validate()">Send Email</button>
             </form>
         </section>
     </main>
     <footer>
-        <ul>
-            <li>Contact me at <br>aidanmccluskey19@gmail.com</li>
-        </ul>
         <span>&copy;2022 Aidan McCluskey</span>
     </footer>
 </body>

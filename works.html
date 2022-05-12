@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio | My Works</title>
     <link rel="icon" type="image/x-icon" href="img/name.png">
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,9 +15,9 @@
     <header>
         <nav class="naveer">
             <ul>
-                <li class="logo"><a href="index.html"><img src="img/name.png" alt="logo"></a></li>
+                <li class="logo"><a href="index.html"><img src="img/namesmol.png" alt="logo"></a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="portfolio.html">My Portfolio</a></li>
+                <li><a href="portfolio.html">Resume</a></li>
                 <li>
                     <ul class="dropdown">
                         <li><a class="pageLink" href="works.html">Work</a></li>
@@ -34,27 +34,26 @@
     </header>
     <main class="main">
         <div class="carousel">
-            <div class="slide">
+            <div class="slide" style="display: block;">
                 <img src="img/chrono.png" alt="Chronoshift">
             </div>
-            <div class="slide">
-                <img src="img/tourism.PNG" alt="Voyager">
+            <div class="slide" style="display: none;">
+                <img src="img/tourism.PNG.jpg" alt="Voyager">
             </div>
-            <div class="slide">
+            <div class="slide" style="display: none;">
                 <img src="img/interactive.png" alt="Interactive Story">
-                <div class="prev" onclick="slide.advance(-1)">&lt;</div>
-                <div class="next" onclick="slide.advance(1)">&gt;</div>
             </div>
+            <div class="prev" onclick="slide.advance(-1)">&#8666;</div>
+            <div class="next" onclick="slide.advance(1)">&#8667;</div>
+        </div>
             <div class="aboutText">
                 <p>
                     Welcome to my works page! Here you can see all of the projects I have worked on so far.
                 </p>
             </div>
     </main>
+    
     <footer>
-        <ul>
-            <li>Contact me at <br>aidanmccluskey19@gmail.com</li>
-        </ul>
         <span>&copy;2022 Aidan McCluskey</span>
     </footer>
 </body>
