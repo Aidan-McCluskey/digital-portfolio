@@ -175,10 +175,21 @@ img {
 }
 
 
-footer {
+footer:not(.footerResume) {
     bottom: 0px;
     width: 100%;
     position: absolute;
+    text-align: center;
+    font-size: 1em;
+    /* justify-content: space-around; */
+    background: rgb(0, 0, 0, .2);
+
+}
+
+.footerResume {
+    bottom: 0px;
+    width: 100%;
+    /* position: absolute; */
     text-align: center;
     font-size: 1em;
     /* justify-content: space-around; */
