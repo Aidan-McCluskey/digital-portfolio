@@ -215,17 +215,85 @@ footer:not(.footerResume) {
         text-align: center;
     }
 
-    .naveer {
-        margin-top: 14vh;
-    }
-
     .carousel {
         flex-wrap: wrap;
         justify-content: center;
+        margin: 0%;
     }
+
+    .aboutText {
+        margin: 0%;
+    }
+
+    
 
     .carousel img {
         width: 65vw;
+    }
+}
+
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .naveer .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .naveer .menu.active{
+        left: 0;
+    }
+    .naveer .menu li{
+        display: block;
+    }
+    .naveer .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    ul {
+        font-size: 70px;
+    }
+    li {
+        font-size: 35px;
+    }
+    .home a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
     }
 }
 
@@ -278,7 +346,6 @@ footer:not(.footerResume) {
 
 @media screen and (max-width: 1024px) {
     body {
-        margin: 0 1em;
         font-size: .75em;
     }
 }
